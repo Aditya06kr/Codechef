@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    cin>>n;
+	    int count=n/5,count1=n%5;
+	    int cnt=1;
+	    cnt=count*2;
+	    if(count1==1 || count1==0){
+	        cout<<cnt<<"\n";
+	    }
+	    else{
+	        cout<<++cnt<<"\n";
+	    }
+	}
+	return 0;
+}
