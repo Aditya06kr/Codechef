@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    cin>>n;
+	    string str;
+	    int x;
+	    cin>>str;
+	    int i=0,j=n-1,cnt=0;
+	    while(i<j){
+	        if(str[i]!=str[j]){
+	            cnt++;
+	        }
+	        i++;
+	        j--;
+	    }
+	    int ans=cnt/2;
+	    if(cnt%2==0){
+	        cout<<ans<<"\n";
+	    }
+	    else{
+	        cout<<++ans<<"\n";
+	    }
+	}
+	return 0;
+}
