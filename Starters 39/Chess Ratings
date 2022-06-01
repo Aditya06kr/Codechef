@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int x,y;
+	    cin>>x>>y;
+	    int ans=x,ans1=0;
+	    while(ans<y){
+	        ans+=8;
+	        ans1++;
+	    }
+	    cout<<ans1<<"\n";
+	}
+	return 0;
+}
