@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    long long x,y;
+	    cin>>x>>y;
+	    long long ans=(10*x)+(90*y);
+	    cout<<ans<<'\n';
+	}
+	return 0;
+}
