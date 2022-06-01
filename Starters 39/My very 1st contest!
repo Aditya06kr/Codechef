@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n,a,b;
+	cin>>n>>a>>b;
+	int first=n-a;
+	int second=first-b;
+	cout<<first<<" "<<second;
+	return 0;
+}
