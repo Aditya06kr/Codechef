@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t,m=1000000007;
+	cin>>t;
+	while(t--){
+	    int n;
+	    cin>>n;
+	    string s;
+	    cin>>s;
+	    int cnt=1;
+      
+	    for(int i=0;i<n;i++){
+	        if(s[i]=='c' || s[i]=='g' || s[i]=='l' || s[i]=='r'){
+	            cnt=(cnt*2)%m;
+	        }
+	    }
+	    cout<<cnt%m<<"\n";
+	}
+	
+	return 0;
+}
