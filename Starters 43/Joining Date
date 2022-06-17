@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,k;
+	    cin>>n>>k;
+	    int n1=n/5 + (n%5==0 ? 0 : 1);
+	    int k1=k/5 + (k%5==0 ? 0 : 1);
+	    cout<<n1-k1<<"\n";
+	}
+	return 0;
+}
